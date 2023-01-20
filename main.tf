@@ -24,7 +24,7 @@ data "aws_security_group" "selected" {
 
 
 module "imagebuilder" {
-  source             = "./modules/terraform-aws-imagebuilder"
+  source             = "./mod/terraform-aws-imagebuilder"
   common_tags        = var.common_tags
   kms_key            = aws_kms_key.test.key_id
   subnet_id          = data.aws_subnet.selected.id
