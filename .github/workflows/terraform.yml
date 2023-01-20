@@ -46,3 +46,13 @@ jobs:
     - name: Terraform Validate
       id: validate
       run: terraform validate
+    
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan --out tfplan.binary
+
+    - name: Terraform Show
+      id: show
+      run: terraform show -json tfplan.binary > tfplan.json
+      
+    
