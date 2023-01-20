@@ -54,6 +54,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         role-to-assume: arn:aws:iam::773914189848:user/sregmi
         aws-region: ap-south-1
+        role-session-name: MySessionName
 
          #aws-region: us-east-1
     
