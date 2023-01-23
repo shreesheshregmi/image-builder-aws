@@ -58,7 +58,7 @@ jobs:
       with:
 #            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
 #            aws-secret-access-key: ${{ secrets.AWS_SECRET_  EY }}
-           rote-to-assume: arn:aws:iam::773914189848:role/shree
+           role-to-assume: arn:aws:iam::773914189848:role/shree
            aws-region: ap-south-1
     - run: aws sts get-caller-identity
 
